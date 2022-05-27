@@ -1,0 +1,36 @@
+###
+
+GET http://localhost:9000/michis HTTP/1.1
+
+###
+GET http://localhost:9000/michis/6290421b8d551f945f6e69b9 HTTP/1.1
+
+###
+
+
+POST  http://localhost:9000/michis HTTP/1.1
+Content-Type: application/json
+
+{
+    "raza": "Siames",
+    "aniosVida": 18,
+    "description": "Negro con marron y gris",
+    "random": "Es una de las razas más populares!"
+}
+
+###
+
+DELETE  http://localhost:9000/michis/6290421b8d551f945f6e69b9 HTTP/1.1
+
+###
+
+PUT  http://localhost:9000/michis/629043088d551f945f6e69bc HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "raza": "Bengala",
+    "aniosVida": 20,
+    "description": "naranja con manchas",
+    "random": "Sus parientes son michis salvajes! rawr!"
+}
